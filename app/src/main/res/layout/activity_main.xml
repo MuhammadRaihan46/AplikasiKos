@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F5F5F5">
+    <!--  Header  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:background="#1565C0" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Beranda Kos" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@android:drawable/ic_menu_myplaces" android:contentDescription="Profil"/>
+    </LinearLayout>
+    <!--  Kartu ringkasan  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="#FFFFFF" android:layout_margin="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selamat Datang, Muhammad" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Kamar Anda: A-01 • Status: Aktif"/>
+    </LinearLayout>
+    <!--  Daftar Kamar (contoh item statis, nanti diisi RecyclerView)  -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Daftar Kamar Tersedia" android:textStyle="bold" android:layout_marginStart="16dp" android:layout_marginTop="8dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="#FFFFFF" android:layout_margin="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kamar A-01 • Standar • Rp750.000/bulan"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Kamar A-02 • Deluxe • Rp1.000.000/bulan"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnLihatSemua" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp" android:text="Lihat Semua Kamar" android:textAllCaps="false"/>
+</LinearLayout>
